@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #66583F;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'Cambo', serif;
+    font-size: 1.5rem;
+}
+
+
+/* font-family: 'Roboto', sans-serif;
+font-size: 35px;
+font-family: 'Cambo', serif;
+font-size: 15px;*/
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .1rem solid black;
+    width: 100%;
+    align-items: center;
+    height: 60px;
+    background-color: transparent;
+    z-index: 100;
+    background-color: #2B1E05;
+    color: #9F8B66;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    margin: 0;
+    padding-left: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1875rem;
+}
+
+.nav ul {
+    display: flex;
+    font-family: 'Cambo', serif;
+    font-size: 0.9375rem;
+}
+
+.nav li {
+    padding: 0 1rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #9F8B66;
+}
+
+@media only screen and (max-width: 600px){
+    header {
+        flex-direction: column;
+        height: 80px;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-top: .5rem;
+    }
+
+    ul {
+        padding: 0;
+        margin: .5rem 0 1rem 0;
+    }
+}
+
+/* Banner */
+.banner {
+    background-image: url(../starting/Resorces/banner-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(18, 18, 18, 0.6);
+    color: #F9D799;
+}
+
+.quote h1 {
+    padding: .5rem .5rem 0 .5rem;
+}
+
+.quote h2 {
+    padding: 1rem .5rem .5rem .5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .banner {
+        height: 50rem;
+    }
+
+    .quote {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner {
+        height: 40rem;
+    }
+
+    .quote {
+        width: 90%;
+    }
+}
+
+/* trails section */
+
+.trails {
+    width: 100%;
+    text-align: center;
+    color: #8C7C5E;
+    border-bottom: .1rem solid black;
+    background-color: #9F8B66;
+}
+
+.trails h2 {
+    margin: 0;
+    padding: 3rem 0;
+    color: #0D0800;
+}
+
+.trails-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo-container {
+    padding: 4rem 0 2.5rem 0;
+    width: 30%;
+    text-align: center;
+    border: .1rem solid black;
+    margin-bottom: 1rem;
+    background-color: #66583F;
+}
+
+.photo-container img {
+    max-width: 100%;
+    height: 30rem;
+    padding-bottom: 1rem;
+}
+
+.button {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .trails-list {
+        justify-content: center;
+    }
+
+    .trails h2 {
+        margin: 0;
+        padding: 1.5rem 0;
+    }
+
+    .photo-container {
+        width: 32%;
+        border: none;
+        padding: 2rem .5rem 1.75rem .5rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .trails-list {
+        display: block;
+    }
+
+    .trails h2 {
+        margin: 0;
+        padding: 1.5rem 0;
+    }
+
+    .photo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20rem;
+        border: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .photo-container img {
+        display: none;
+    }
+
+    .photo-container h3 {
+        background-color: rgba(18, 18, 18, 0.6);
+        padding: 2%;
+        cursor: pointer;
+    }
+
+    .mobile-p-1 {
+        background-image: url(../starting/Resorces/trails-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .mobile-p-2 {
+        background-image: url(../starting/Resorces/trail-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .mobile-p-3 {
+        background-image: url(../starting/Resorces/trail-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+/* products Section */
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    color: #0D0800;
+}
+
+.product-row {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-container {
+    width: 30%;
+    margin: 1.25rem;
+    border: .1rem solid black;
+    background-color: #9F8B66;
+}
+
+.product-container img {
+    max-width: 70%;
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+.products h2 {
+    margin: 3rem 0;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .products {
+        display: block;
+        margin: 0;
+    }
+
+    .product-row {
+        width: 100%;
+    }
+
+    .product-container {
+        width: 100%;
+        height: 10rem;
+        border: none;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-container h4 {
+        background-color: rgba(255,255,255, 0.3);
+        padding: 1.5%;
+    }
+
+    .product-container img {
+        display: none;
+    }
+
+    .mobile-shop-1, .mobile-shop-2, .mobile-shop-3, .mobile-shop-4, .mobile-shop-5, .mobile-shop-6, .mobile-shop-7, .mobile-shop-8 {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+    }
+
+    .mobile-shop-1 {
+        background-image: url(../starting/Resorces/winter-jackets.jpg);
+    }
+
+    .mobile-shop-2 {
+        background-image: url(../starting/Resorces/leather-shoes.jpg);
+    }
+
+    .mobile-shop-3 {
+        background-image: url(../starting/Resorces/running-clothing.jpg);
+    }
+
+    .mobile-shop-4 {
+        background-image: url(../starting/Resorces/hiking-boots.jpg);
+    }
+
+    .mobile-shop-5 {
+        background-image: url(../starting/Resorces/Accessories.jpg);
+    }
+
+    .mobile-shop-6 {
+        background-image: url(../starting/Resorces/maps.jpg);
+    }
+
+    .mobile-shop-7 {
+        background-image: url(../starting/Resorces/cookware.jpg);
+    }
+
+    .mobile-shop-8 {
+        background-image: url(../starting/Resorces/tent.jpg);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .products {
+        margin-top: 2%;
+    }
+
+    .mobile-shop-3, .mobile-shop-4, .mobile-shop-5, .mobile-shop-6 {
+        display: none;
+    }
+
+    .product-container h2 {
+        margin: 0;
+    }
+
+    #name {
+        height: 5.5rem;
+    }
+}
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B1E05;
+    color: #9F8B66;
+}
+
+footer p {
+    margin: 2%;
+}
+
+.contact {
+    padding-left: 2%;
+}
+
+.contact h5 {
+    margin: 2%;
+}
+
+.author {
+    align-self: flex-end;
+    padding-right: 2%;
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        font-size: 0.75rem;
+    }
+
+    .contact {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
